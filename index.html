@@ -9,7 +9,7 @@
     <meta name="keywords" content="free.ye简历，前端工程师，求职前端，前端博客" />
     <meta name="author" content="free.ye, 个人博客:http://blog.csdn.net/wildye">
 
-    <link rel="shortcut icon" href="./static/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="static/images/favicon.ico" type="image/x-icon">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./static/css/bootstrap.css">
@@ -479,35 +479,34 @@
   </div>
 </nav>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="./static/js/jquery.1.11.1.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="./static/js/bootstrap.js"></script>
-<script src="./static/js/SmoothScroll.js"></script>
-<script src="./static/js/jquery.prettyPhoto.js"></script>
-<script src="./static/js/jquery.isotope.js"></script>
-<script src="./static/js/jquery.counterup.js"></script>
-<script src="./static/js/waypoints.js"></script>
-<script src="./static/js/jqBootstrapValidation.js"></script>
-<script src="./static/js/contact_me.js"></script>
-<script src="./static/js/owl.carousel.js"></script>
-
-<!-- Javascripts
-    ================================================== -->
-<script src="./static/js/main.js"></script>
+<script src="static/js/labjs.min.js"></script>
+<script>
+    $LAB.script('static/js/jquery.1.11.1.js').wait()
+        .script('static/js/jquery.prettyPhoto.js')
+        .script('static/js/jquery.isotope.js')
+        .script('static/js/jquery.counterup.js')
+        .script('static/js/bootstrap.js')
+        .script('static/js/jqBootstrapValidation.js')
+        .script('static/js/SmoothScroll.js')
+        .script('static/js/waypoints.js')
+        .script('static/js/contact_me.js')
+        .script('static/js/owl.carousel.js')
+        .script('static/js/main.js')
+</script>
 
 <script>
-  $(function(){
-    var u = navigator.userAgent;
-    if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1||u.indexOf('iPhone') > -1||u.indexOf('Windows Phone') > -1||navigator.userAgent.indexOf("iPad")>-1) {
 
-      $(".hover-bg .hover-text").css({'opacity':'1'});
-      $(".hover-bg .hover-text>h4").css({'opacity':'1','-webkit-transform':'translateY(0)','transform':'translateY(0)'});
-      $(".hover-bg .hover-text>i").css({'opacity':'1'});
-    }
+    $(function(){
+        var u = navigator.userAgent;
+        if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1||u.indexOf('iPhone') > -1||u.indexOf('Windows Phone') > -1||navigator.userAgent.indexOf("iPad")>-1) {
 
-  });
+            $(".hover-bg .hover-text").css({'opacity':'1'});
+            $(".hover-bg .hover-text>h4").css({'opacity':'1','-webkit-transform':'translateY(0)','transform':'translateY(0)'});
+            $(".hover-bg .hover-text>i").css({'opacity':'1'});
+        }
+    });
 
 </script>
+
 </body>
 </html>
