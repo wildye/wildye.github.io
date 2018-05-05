@@ -11,19 +11,13 @@
 
     <link rel="shortcut icon" href="static/images/favicon.ico" type="image/x-icon">
 
-    <!-- Bootstrap -->
     <link rel="stylesheet" href="./static/css/bootstrap.min.css">
-
-    <!-- Mobile Slider -->
     <link href="./static/css/owl.css" rel="stylesheet" media="screen">
-
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="./static/css/style.css">
 
     <!--[if lt IE 9]>
         <script src="./static/js/html5.dc.min.js"></script>
     <![endif]-->
-
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <!-- Navigation -->
@@ -477,28 +471,15 @@
 </nav>
 
 <script src="static/js/labjs.min.js"></script>
-<script>
-    $LAB.script('static/js/jquery.1.11.1.js').wait(function(){
-        $(function(){
-            var u = navigator.userAgent;
-            if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1||u.indexOf('iPhone') > -1||u.indexOf('Windows Phone') > -1||navigator.userAgent.indexOf("iPad")>-1) {
 
-                $(".hover-bg .hover-text").css({'opacity':'1'});
-                $(".hover-bg .hover-text>h4").css({'opacity':'1','-webkit-transform':'translateY(0)','transform':'translateY(0)'});
-                $(".hover-bg .hover-text>i").css({'opacity':'1'});
-            }
-        });
-    })
-        .script('static/js/jquery.prettyPhoto.js')
-        .script('static/js/jquery.isotope.js')
-        .script('static/js/jquery.counterup.js')
-        .script('static/js/bootstrap.js')
-        .script('static/js/jqBootstrapValidation.js')
-        .script('static/js/SmoothScroll.js')
-        .script('static/js/waypoints.js')
-        .script('static/js/contact_me.js')
-        .script('static/js/owl.carousel.js')
-        .script('static/js/main.js')
+<script>
+  $LAB.script('static/js/jquery.1.11.1.js').wait()
+      .script('static/js/jquery.isotope.js')
+      .script('static/js/jquery.counterup.js')
+      .script('static/js/bootstrap.min.js')
+      .script('static/js/waypoints.js')
+      .script('static/js/owl.carousel.js')
+      .script('static/js/main.js')
 </script>
 
 </body>
