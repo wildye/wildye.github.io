@@ -481,7 +481,17 @@
 
 <script src="static/js/labjs.min.js"></script>
 <script>
-    $LAB.script('static/js/jquery.1.11.1.js').wait()
+    $LAB.script('static/js/jquery.1.11.1.js').wait(function(){
+        $(function(){
+            var u = navigator.userAgent;
+            if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1||u.indexOf('iPhone') > -1||u.indexOf('Windows Phone') > -1||navigator.userAgent.indexOf("iPad")>-1) {
+
+                $(".hover-bg .hover-text").css({'opacity':'1'});
+                $(".hover-bg .hover-text>h4").css({'opacity':'1','-webkit-transform':'translateY(0)','transform':'translateY(0)'});
+                $(".hover-bg .hover-text>i").css({'opacity':'1'});
+            }
+        });
+    })
         .script('static/js/jquery.prettyPhoto.js')
         .script('static/js/jquery.isotope.js')
         .script('static/js/jquery.counterup.js')
@@ -496,15 +506,7 @@
 
 <script>
 
-    $(function(){
-        var u = navigator.userAgent;
-        if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1||u.indexOf('iPhone') > -1||u.indexOf('Windows Phone') > -1||navigator.userAgent.indexOf("iPad")>-1) {
 
-            $(".hover-bg .hover-text").css({'opacity':'1'});
-            $(".hover-bg .hover-text>h4").css({'opacity':'1','-webkit-transform':'translateY(0)','transform':'translateY(0)'});
-            $(".hover-bg .hover-text>i").css({'opacity':'1'});
-        }
-    });
 
 </script>
 
