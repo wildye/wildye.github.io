@@ -1,0 +1,207 @@
+/* html5 Reset Stylesheet */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+:focus {
+  outline: 1;
+}
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+a:hover {
+  text-decoration: none;
+}
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+.section {
+  font: 50px "Microsoft Yahei";
+  color: #fff;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.section:nth-child(1) {
+  background-image: url("../images/intro-bg.jpg");
+}
+.section:nth-child(2) {
+  background-image: url("../images/bg2.jpg");
+}
+.section:nth-child(3) {
+  background-image: url("../images/bg3.jpg");
+}
+.section:nth-child(4) {
+  background-image: url("../images/bg4.jpg");
+}
+.nav-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #000;
+  z-index: 10;
+}
+.nav-top ul#menu-list {
+  font-size: 0;
+  list-style-type: none;
+  text-align: center;
+}
+.nav-top li {
+  display: inline-block;
+  margin-right: 10px;
+  font: 14px "Microsoft Yahei";
+}
+.nav-top a {
+  display: inline-block;
+  padding: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+.nav-top .active a {
+  color: #000;
+  background: #4bf;
+}
