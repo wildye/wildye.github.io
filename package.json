@@ -1,0 +1,24 @@
+{
+  "name": "wildye.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wildye/wildye.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wildye/wildye.github.io/issues"
+  },
+  "homepage": "https://github.com/wildye/wildye.github.io#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongodb": "^3.0.6",
+    "mongoose": "^5.1.0"
+  }
+}
